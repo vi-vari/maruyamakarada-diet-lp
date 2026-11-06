@@ -1,0 +1,80 @@
+/* 自動<p>タグの非表示 */
+p:empty{display: none;}
+/* 自動<p>タグの非表示 */
+
+
+.h1_title{
+	width: 100%;
+	margin: 0 auto;
+}
+.h1_title h1{
+	display: inline-block;
+	width: 600px;
+    margin-left: calc( 50% - 300px);
+	color: #fff;
+}
+.pc{
+	display: block;
+}
+.sp{
+	display: none;
+}
+@media (max-width: 1024px){
+.h1_title h1 {
+    width: 100%;
+    margin-left: calc( 50% - 48%);
+}
+.pc{
+	display: none;
+}
+.sp{
+	display: block;
+}
+}
+.col1 .keni-section_wrap {
+    max-width: 600px!important;
+}
+.keni-main_inner {
+    padding: 0px 0!important;
+}
+.keni-container,.fn-keni-container{
+	padding-bottom: 0!important;
+}
+/* pc時の全体幅 */
+.keni-main .keni-section_wrap {
+    padding: 0px 0px!important;
+	margin: 0;
+}
+img{
+	width: 100%;
+}
+.section_inner{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/*最下部隙間調整*/
+.behind-article-area {
+    margin-top: 0!important;
+}
+
+.keni-footer_wrap {
+	padding-top: 40px;
+}
+
+
+/*パンくずリスト*/
+.keni-breadcrumb-list_wrap {
+	display: none!important;
+}
+
+/*Q&Aの三角を消す*/
+summary {
+  display: block;
+  list-style: none;
+}
+/* 一部ブラウザで消えなかった場合は以下も追記 */
+summary::-webkit-details-marker {
+  display:none;
+}
